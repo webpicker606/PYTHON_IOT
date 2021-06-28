@@ -1,7 +1,11 @@
 import smtplib
 server = smtplib.SMTP_SSL("smtp.gmail.com",465)
-server.login("hamsananth007@gmail.com","muiegdmlucsqmivc")
+from_address="hamsananth007@gmail.com"
+app_password="muiegdmlucsqmivc"
+server.login(from_address,app_password)
 print('login successfull')
-server.sendmail("hamsananth007@gmail.com","hamsananth2093@gmail.com","hi i am a bot of hamsananth just testing whether i am working or not")
+message="hi i am a bot of hamsananth just testing!"
+to_address="hamsananth2093@gmail.com"
+server.sendmail(from_adress,to_address,message)
 print('mail sent')
 server.quit()
