@@ -6,6 +6,6 @@ server.login(from_address,app_password)
 print('login successfull')
 message="hi i am a bot of hamsananth just testing!"
 to_address="hamsananth2093@gmail.com"
-server.sendmail(from_adress,to_address,message)
+server.sendmail(from_address,to_address,message)
 print('mail sent')
 server.quit()
